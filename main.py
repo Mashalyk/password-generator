@@ -2,7 +2,11 @@ import random
 import string
 
 try:
-    length = int(input("Enter password length: "))
+    while True:
+    length = int(input("Enter password length (min 4): "))
+    if length >= 4:
+        break
+    print("Password must be at least 4 characters long.")
     count = int(input("How many passwords to generate: "))
 except ValueError:
     print("Please enter numbers only.")
