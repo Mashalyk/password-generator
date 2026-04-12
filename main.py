@@ -18,4 +18,4 @@ for i in range(count):
     password = ""
     for j in range(length):
         password += random.choice(characters)
-    print("Generated password:", password)
+    print("Your secure password:", password)
